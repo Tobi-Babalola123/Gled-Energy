@@ -43,19 +43,19 @@ const partners = [
   },
   {
     name: "MUST Power",
-    logo: "/partners/Must.jpeg",
+    logo: "/partners/Musst.png",
   },
   {
-    name: "Deye",
-    logo: "/partners/Deye.jpeg",
+    name: "Haustrom",
+    logo: "/partners/haustromm.png",
   },
   {
-    name: "LONGi",
-    logo: "/partners/Longisolar.jpeg",
+    name: "MSG",
+    logo: "/partners/msgg.png",
   },
   {
-    name: "Longisolar",
-    logo: "/partners/longi2.jpeg",
+    name: "Luminos",
+    logo: "/partners/luminos.png",
   },
 ];
 

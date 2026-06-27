@@ -12,6 +12,8 @@ import { FAQSection } from "@/components/faq-section";
 import { CTASection } from "@/components/cta-section";
 import { ContactForm } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
+import { TeamSection } from "@/components/team-section";
+import { InitiativeSection } from "@/components/initiative-section";
 
 export default function Home() {
   return (
@@ -25,6 +27,9 @@ export default function Home() {
         <SavingsCalculator />
         <ProcessTimeline />
         <WhyChooseSection />
+        <TeamSection />
+
+        <InitiativeSection />
         <StatsSection />
         <TestimonialsSection />
         <FAQSection />
