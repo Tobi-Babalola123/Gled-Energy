@@ -7,6 +7,7 @@ import {
   HiOutlineGlobeAlt,
   HiOutlineCurrencyDollar,
 } from "react-icons/hi2";
+import Image from "next/image";
 
 const benefits = [
   {
@@ -32,6 +33,29 @@ const benefits = [
     title: "Long-Term Savings",
     description:
       "Invest once and enjoy decades of reliable energy backed by industry-leading warranties.",
+  },
+];
+
+const partners = [
+  {
+    name: "Jinko Solar",
+    logo: "/partners/junko.jpeg",
+  },
+  {
+    name: "MUST Power",
+    logo: "/partners/Must.jpeg",
+  },
+  {
+    name: "Deye",
+    logo: "/partners/Deye.jpeg",
+  },
+  {
+    name: "LONGi",
+    logo: "/partners/Longisolar.jpeg",
+  },
+  {
+    name: "Longisolar",
+    logo: "/partners/longi2.jpeg",
   },
 ];
 
@@ -82,19 +106,21 @@ export function BenefitsSection() {
 
         {/* Partner Logos */}
         <div className="mb-24 border-b border-border pb-16">
-          <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
-            {["Must", "Jinko", "Haus Strom", "Lumino", "MSG"].map(
-              (partner, idx) => (
-                <div
-                  key={idx}
-                  className="group flex h-24 w-44 items-center justify-center rounded-2xl border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
-                >
-                  <span className="text-lg font-semibold text-muted-foreground transition-colors group-hover:text-foreground">
-                    {partner}
-                  </span>
-                </div>
-              ),
-            )}
+          <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-8">
+            {partners.map((partner) => (
+              <div
+                key={partner.name}
+                className="group flex h-24 w-44 items-center justify-center rounded-2xl border border-border bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl"
+              >
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={140}
+                  height={60}
+                  className="h-10 w-auto object-contain transition-all duration-300 grayscale group-hover:grayscale-0"
+                />
+              </div>
+            ))}
           </div>
         </div>
 
